@@ -4,8 +4,12 @@
     align-items: center ;
     width: 100%;
     border-radius: 2px;
+    
    
    
+}
+.todoItem >p{
+    transition: all 0.3s ease-in-out;
 }
 .todoItem > span{
     display: flex;

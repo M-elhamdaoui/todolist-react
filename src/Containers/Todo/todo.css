@@ -8,10 +8,12 @@
     min-height: 85vh;
     width: 38%;
     margin: 0 auto;
+   
 
     
    
 }
+
 .todo.dark{
     color:hsl(234, 39%, 85%);
 }

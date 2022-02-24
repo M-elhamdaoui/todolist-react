@@ -20,11 +20,14 @@ function TodoItem(props) {
   return (
     <div className={classes.join(" ")}>
       <span>
-        <span className={completedClasses.join(" ")}>
+        <span
+          className={completedClasses.join(" ")}
+          onClick={props.toggleCompleted}
+        >
           {isCompleted ? <img src={checkIcon} alt="completed" /> : ""}
         </span>
       </span>
-      <p className={isCompleted?completed:""}>{props.content}</p>
+      <p className={isCompleted ? completed : ""}>{props.content}</p>
     </div>
   );
 }
