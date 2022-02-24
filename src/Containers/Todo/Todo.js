@@ -1,4 +1,4 @@
-import React ,{useContext} from 'react'
+import React ,{useContext,useState} from 'react'
 import './todo.css'
 import Theme from '../../Contexts/MoodContext';
 import {TodoControllers,TodoHeader,TodoInput,TodoList} from "../../Components"
@@ -11,7 +11,7 @@ function Todo() {
     <div className={classes.join(" ")} >
       <TodoHeader/>
       <TodoInput/>
-      <div>
+      <div className='todoContainer' >
         <TodoList/>
         <TodoControllers/>
       </div>
