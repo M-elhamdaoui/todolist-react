@@ -1,0 +1,11 @@
+.footer{
+    width: 100%;
+    height: 65vh;
+    
+}
+.footer.dark{
+    background-color: hsl(235, 21%, 11%) ;
+}
+.footer.light{
+    background-color: hsl(0, 0%, 98%) ;
+}
