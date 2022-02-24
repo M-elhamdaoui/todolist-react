@@ -1,4 +1,4 @@
-import React ,{useContext,useState,useEffect,useReducer} from 'react'
+import React ,{useContext,useState,useEffect} from 'react'
 import './todo.css'
 import Theme from '../../Contexts/MoodContext';
 import {TodoControllers,TodoHeader,TodoInput,TodoList} from "../../Components"
@@ -76,13 +76,15 @@ const sortTable=(data,shape)=>{
   switch(shape){
     case "All":
       return data;
-      break;
+  
     case "Completed":
       return data.filter(elem=>elem.isCompleted===true)
-      break;
+      
     case "Active":
       return data.filter(elem=>elem.isCompleted===false)
-      break;
+     
+      default :
+      return null;
     
   }
 }

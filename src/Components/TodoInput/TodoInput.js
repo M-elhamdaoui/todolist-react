@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import "./todoInput.css";
-import iconTodo from "../../Assets/icons/icon-check.svg";
 import Theme from "../../Contexts/MoodContext";
 
 function TodoInput(props) {
